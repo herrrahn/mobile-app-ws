@@ -1,10 +1,13 @@
-package ui.model.request;
+package com.rafaelrahn.mobileappws.models.response;
 
-public class UserDetailsRequestModel {
+public class UserRest {
     private String firstName;
     private String lastName;
     private String email;
-    private String password;
+    private String id;
+
+    public UserRest() {
+    }
 
     public String getFirstName() {
         return firstName;
@@ -30,11 +33,11 @@ public class UserDetailsRequestModel {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+    public String getId() {
+        return id;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setId(String id) {
+        this.id = id;
     }
 }
